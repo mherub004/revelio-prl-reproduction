@@ -1,4 +1,6 @@
 # Reproducing and Extending Revelio
+Mherub Ahsan
+Friedrich-Alexander University of Erlangen
 
 This repository contains my PRL seminar reproduction and extension of selected Diff-C experiments from the paper:
 
