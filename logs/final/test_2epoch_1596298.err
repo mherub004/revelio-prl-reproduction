@@ -1,0 +1,149 @@
+2026-05-10 21:06:10 PID=467028 __init__.py:49 setup_logging() INFO → 'standard' logger initialized.
+2026-05-10 21:06:11 PID=467028 config.py:58 <module>() INFO → PyTorch version 2.1.0+cu118 available.
+2026-05-10 21:06:17 PID=467028 train.py:249 <module>() INFO → Setting things up...
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → dataset_flag: timm/oxford-iiit-pet
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → output_dir: ./outputs/test_2epoch
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → seed: 42
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → model_name: stable-diffusion-v1-5/stable-diffusion-v1-5
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → diffusion_timestep: 25
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → diffusion_layer: up_ft:1
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → learning_rate: 0.0001
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → num_epochs: 2
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → batch_size: 8
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → prompt_type: empty
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → pooling_strategy: GAP
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → dropout_rate: 0.0
+2026-05-10 21:06:17 PID=467028 train.py:251 <module>() INFO → num_classes: 37
+2026-05-10 21:06:17 PID=467028 train.py:260 <module>() INFO → Output directory: ./outputs/test_2epoch/timm-oxford-iiit-pet/stable-diffusion-v1-5-stable-diffusion-v1-5/diffusion_step_25/layer_up_ft:1/prompt_empty/pool_GAP/dropout_0.0
+2026-05-10 21:06:17 PID=467028 train.py:262 <module>() INFO → Setting up device...
+2026-05-10 21:06:17 PID=467028 train.py:264 <module>() INFO → Device: cuda
+2026-05-10 21:06:17 PID=467028 train.py:265 <module>() INFO → Device count: 1
+2026-05-10 21:06:17 PID=467028 train.py:266 <module>() INFO → 
+2026-05-10 21:06:17 PID=467028 train.py:268 <module>() INFO → Setting up random seed...
+2026-05-10 21:06:17 PID=467028 train.py:270 <module>() INFO → 
+2026-05-10 21:06:17 PID=467028 train.py:272 <module>() INFO → Setting up prompt selector...
+2026-05-10 21:06:25 PID=467028 train.py:283 <module>() INFO → Loading dataset...
+2026-05-10 21:06:25 PID=467028 dataset.py:85 load_huggingface_dataset() INFO → Loading dataset timm/oxford-iiit-pet with split train
+2026-05-10 21:06:27 PID=467028 dataset.py:88 load_huggingface_dataset() INFO → Dataset loaded: 3680 samples
+2026-05-10 21:06:27 PID=467028 dataset.py:85 load_huggingface_dataset() INFO → Loading dataset timm/oxford-iiit-pet with split test
+2026-05-10 21:06:29 PID=467028 dataset.py:88 load_huggingface_dataset() INFO → Dataset loaded: 3669 samples
+2026-05-10 21:06:29 PID=467028 base_encoder.py:44 __init__() WARNING → Unfreezing MM Vision Tower: False
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:00<00:00, 26.31it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  6.85it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  7.70it/s]
+You have disabled the safety checker for <class 'feature_models.diffusion_features.OneStepSDPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/logging/__init__.py", line 1100, in emit
+    msg = self.format(record)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/logging/__init__.py", line 943, in format
+    return fmt.format(record)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/logging/__init__.py", line 678, in format
+    record.message = record.getMessage()
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/logging/__init__.py", line 368, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/train.py", line 324, in <module>
+    logger.info("Sample feature shape: ", sample_feature.shape)
+Message: 'Sample feature shape: '
+Arguments: (torch.Size([1, 1280, 32, 32]),)
+2026-05-10 21:07:13 PID=467028 train.py:326 <module>() INFO → Setting up model...
+2026-05-10 21:07:13 PID=467028 base_encoder.py:44 __init__() WARNING → Unfreezing MM Vision Tower: False
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:00<00:00, 16.38it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00, 17.63it/s]
+You have disabled the safety checker for <class 'feature_models.diffusion_features.OneStepSDPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+2026-05-10 21:07:16 PID=467028 train.py:329 <module>() INFO → 
+2026-05-10 21:07:16 PID=467028 train.py:338 <module>() INFO → Number of model parameters: 933842893, Trainable: 40158245, Frozen: 893684648
+2026-05-10 21:07:16 PID=467028 train.py:341 <module>() INFO → 
+2026-05-10 21:07:16 PID=467028 train.py:347 <module>() INFO → Final Config: {'dataset_flag': 'timm/oxford-iiit-pet', 'output_dir': './outputs/test_2epoch/timm-oxford-iiit-pet/stable-diffusion-v1-5-stable-diffusion-v1-5/diffusion_step_25/layer_up_ft:1/prompt_empty/pool_GAP/dropout_0.0', 'seed': 42, 'model_name': 'stable-diffusion-v1-5/stable-diffusion-v1-5', 'diffusion_timestep': 25, 'diffusion_layer': 'up_ft:1', 'learning_rate': 0.0001, 'num_epochs': 2, 'batch_size': 8, 'prompt_type': 'empty', 'pooling_strategy': 'GAP', 'dropout_rate': 0.0, 'num_classes': 37, 'num_devices': 1, 'feature_model': 'diffusion', 'diffusion_step_type': 'onestep', 'device': device(type='cuda'), 'input_channels': 1280, 'num_model_params': 933842893, 'num_trainable_params': 40158245, 'num_frozen_params': 893684648}
+2026-05-10 21:07:16 PID=467028 train.py:348 <module>() INFO → 
+2026-05-10 21:07:16 PID=467028 train.py:353 <module>() INFO → Setting up WandB...
+wandb: Tracking run with wandb version 0.26.1
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/wandb/offline-run-20260510_210716-zwvee4b3
+2026-05-10 21:07:17 PID=467028 train.py:368 <module>() INFO → WandB initialized
+2026-05-10 21:07:17 PID=467028 train.py:370 <module>() INFO → Setting up Training...
+2026-05-10 21:07:17 PID=467028 train.py:380 <module>() INFO → Starting Training...
+  0%|          | 0/460 [00:00<?, ?it/s]  0%|          | 1/460 [00:03<24:18,  3.18s/it]  0%|          | 1/460 [00:03<27:20,  3.57s/it]
+Traceback (most recent call last):
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/train.py", line 382, in <module>
+    train_loss, train_accuracy = training_step(
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/train.py", line 76, in training_step
+    features = model(diffusion_images, None, config["diffusion_timestep"])
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/models.py", line 116, in forward
+    features = self.get_features(batch_images, prompt_embs, time_step)
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/models.py", line 108, in get_features
+    image_features = self.feature_extractor.get_raw_features(
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/feature_models/feature_extractor.py", line 34, in get_raw_features
+    return self.feature_model.get_raw_features(
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/feature_models/diffusion_features.py", line 463, in get_raw_features
+    return self.model.extract_raw_features(batch_images, prompt_embeds, time_step)
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/feature_models/diffusion_features.py", line 312, in extract_raw_features
+    latents = scale_factor * self.vae.encode(images).latent_dist.mode()
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 271, in encode
+    h = self.encoder(x)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/models/autoencoders/vae.py", line 172, in forward
+    sample = down_block(sample)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 1474, in forward
+    hidden_states = resnet(hidden_states, temb=None)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/models/resnet.py", line 371, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacty of 10.57 GiB of which 716.12 MiB is free. Including non-PyTorch memory, this process has 9.87 GiB memory in use. Of the allocated memory 8.18 GiB is allocated by PyTorch, and 1.47 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/train.py", line 382, in <module>
+    train_loss, train_accuracy = training_step(
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/train.py", line 76, in training_step
+    features = model(diffusion_images, None, config["diffusion_timestep"])
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/models.py", line 116, in forward
+    features = self.get_features(batch_images, prompt_embs, time_step)
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/models.py", line 108, in get_features
+    image_features = self.feature_extractor.get_raw_features(
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/feature_models/feature_extractor.py", line 34, in get_raw_features
+    return self.feature_model.get_raw_features(
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/feature_models/diffusion_features.py", line 463, in get_raw_features
+    return self.model.extract_raw_features(batch_images, prompt_embeds, time_step)
+  File "/home/hpc/rlvl/rlvl173v/revelio/diffc_image_classification/feature_models/diffusion_features.py", line 312, in extract_raw_features
+    latents = scale_factor * self.vae.encode(images).latent_dist.mode()
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
+    return method(self, *args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl.py", line 271, in encode
+    h = self.encoder(x)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/models/autoencoders/vae.py", line 172, in forward
+    sample = down_block(sample)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/models/unets/unet_2d_blocks.py", line 1474, in forward
+    hidden_states = resnet(hidden_states, temb=None)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/woody/rlvl/rlvl173v/software/private/conda/envs/revelio/lib/python3.10/site-packages/diffusers/models/resnet.py", line 371, in forward
+    output_tensor = (input_tensor + hidden_states) / self.output_scale_factor
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacty of 10.57 GiB of which 716.12 MiB is free. Including non-PyTorch memory, this process has 9.87 GiB memory in use. Of the allocated memory 8.18 GiB is allocated by PyTorch, and 1.47 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environments
+.env
+.venv/
+venv/
+env/
+conda/
+
+# Large ML/model files
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+
+# Datasets and caches
+datasets/
+data/
+cache/
+.cache/
+huggingface/
+wandb/
+outputs/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.key
+*.pem
+*.token
+secrets.*

@@ -1,0 +1,111 @@
+REVELIO FINAL EXPERIMENT RESULTS
+================================
+
+Dataset: Oxford-IIIT Pet
+Model: Stable Diffusion 1.5
+Classifier: Diff-C
+Epochs: 30
+Batch size: 4
+Prompt: empty
+Pooling: GAP
+
+------------------------------------------------------------
+SD-1.5 bottleneck, t=25
+Model: Stable Diffusion 1.5
+Layer: bottleneck:0
+Timestep: 25
+Epoch: 30
+Test accuracy: 0.71736
+Test accuracy (%): 71.736
+Test loss: 1.06506
+Training accuracy: 0.98668
+Training loss: 0.05054
+Log file: /home/woody/rlvl/rlvl173v/revelio/logs/v100_sd15_bottleneck0_t25_1696129.err
+Saved output: ./outputs/v100_sd15_bottleneck0_t25_1696129/timm-oxford-iiit-pet/stable-diffusion-v1-5-stable-diffusion-v1-5/diffusion_step_25/layer_bottleneck:0/prompt_empty/pool_GAP/dropout_0.0/results.json
+
+------------------------------------------------------------
+SD-1.5 up_ft0, t=25
+Model: Stable Diffusion 1.5
+Layer: up_ft:0
+Timestep: 25
+Epoch: 30
+Test accuracy: 0.74244
+Test accuracy (%): 74.244
+Test loss: 0.94752
+Training accuracy: 0.9913
+Training loss: 0.05314
+Log file: /home/woody/rlvl/rlvl173v/revelio/logs/v100_sd15_upft0_t25_1696128.err
+Saved output: ./outputs/v100_sd15_upft0_t25_1696128/timm-oxford-iiit-pet/stable-diffusion-v1-5-stable-diffusion-v1-5/diffusion_step_25/layer_up_ft:0/prompt_empty/pool_GAP/dropout_0.0/results.json
+
+------------------------------------------------------------
+SD-1.5 up_ft1, t=25
+Model: Stable Diffusion 1.5
+Layer: up_ft:1
+Timestep: 25
+Epoch: 30
+Test accuracy: 0.87244
+Test accuracy (%): 87.244
+Test loss: 0.51865
+Training accuracy: 0.97908
+Training loss: 0.08138
+Log file: /home/woody/rlvl/rlvl173v/revelio/logs/sd15_upft1_t50_1671566.err
+Saved output: ./outputs/sd15_upft1_t50/timm-oxford-iiit-pet/stable-diffusion-v1-5-stable-diffusion-v1-5/diffusion_step_25/layer_up_ft:1/prompt_empty/pool_GAP/dropout_0.0/results.json
+
+------------------------------------------------------------
+SD-1.5 up_ft2, t=25
+Model: Stable Diffusion 1.5
+Layer: up_ft:2
+Timestep: 25
+Epoch: 30
+Test accuracy: 0.79204
+Test accuracy (%): 79.204
+Test loss: 0.81642
+Training accuracy: 0.95027
+Training loss: 0.19382
+Log file: /home/woody/rlvl/rlvl173v/revelio/logs/sd15_upft2_t25_1668726.err
+Saved output: ./outputs/sd15_upft2_t25/timm-oxford-iiit-pet/stable-diffusion-v1-5-stable-diffusion-v1-5/diffusion_step_25/layer_up_ft:2/prompt_empty/pool_GAP/dropout_0.0/results.json
+
+------------------------------------------------------------
+SD-1.5 up_ft1, t=50
+Model: Stable Diffusion 1.5
+Layer: up_ft:1
+Timestep: 50
+Epoch: 30
+Test accuracy: 0.86863
+Test accuracy (%): 86.863
+Test loss: 0.55064
+Training accuracy: 0.97609
+Training loss: 0.08035
+Log file: /home/woody/rlvl/rlvl173v/revelio/logs/sd15_upft1_t50_1668729.err
+Saved output: ./outputs/sd15_upft1_t50/timm-oxford-iiit-pet/stable-diffusion-v1-5-stable-diffusion-v1-5/diffusion_step_50/layer_up_ft:1/prompt_empty/pool_GAP/dropout_0.0/results.json
+
+------------------------------------------------------------
+SD-1.5 up_ft1, t=75
+Model: Stable Diffusion 1.5
+Layer: up_ft:1
+Timestep: 75
+Epoch: 30
+Test accuracy: 0.8689
+Test accuracy (%): 86.890
+Test loss: 0.53779
+Training accuracy: 0.97745
+Training loss: 0.07777
+Log file: /home/woody/rlvl/rlvl173v/revelio/logs/sd15_upft1_t75_1668730.err
+Saved output: ./outputs/sd15_upft1_t75/timm-oxford-iiit-pet/stable-diffusion-v1-5-stable-diffusion-v1-5/diffusion_step_75/layer_up_ft:1/prompt_empty/pool_GAP/dropout_0.0/results.json
+
+------------------------------------------------------------
+SD-1.5 up_ft1, t=100
+Model: Stable Diffusion 1.5
+Layer: up_ft:1
+Timestep: 100
+Epoch: 30
+Test accuracy: 0.86999
+Test accuracy (%): 86.999
+Test loss: 0.5122
+Training accuracy: 0.97609
+Training loss: 0.08239
+Log file: /home/woody/rlvl/rlvl173v/revelio/logs/sd15_upft1_t100_from_t75_1693487.err
+Saved output: ./outputs/sd15_upft1_t100_from_t75/timm-oxford-iiit-pet/stable-diffusion-v1-5-stable-diffusion-v1-5/diffusion_step_100/layer_up_ft:1/prompt_empty/pool_GAP/dropout_0.0/results.json
+
+------------------------------------------------------------
+CSV file: /home/hpc/rlvl/rlvl173v/revelio/report_artifacts/tables/selected_final_results.csv

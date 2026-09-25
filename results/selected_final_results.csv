@@ -1,0 +1,8 @@
+experiment,model,layer,timestep,epoch,test_accuracy,test_accuracy_percent,test_loss,train_accuracy,train_loss,log_file
+SD-1.5 bottleneck, t=25,Stable Diffusion 1.5,bottleneck:0,25,30,0.71736,71.736,1.06506,0.98668,0.05054,v100_sd15_bottleneck0_t25_1696129.err
+SD-1.5 up_ft0, t=25,Stable Diffusion 1.5,up_ft:0,25,30,0.74244,74.244,0.94752,0.9913,0.05314,v100_sd15_upft0_t25_1696128.err
+SD-1.5 up_ft1, t=25,Stable Diffusion 1.5,up_ft:1,25,30,0.87244,87.244,0.51865,0.97908,0.08138,sd15_upft1_t50_1671566.err
+SD-1.5 up_ft2, t=25,Stable Diffusion 1.5,up_ft:2,25,30,0.79204,79.204,0.81642,0.95027,0.19382,sd15_upft2_t25_1668726.err
+SD-1.5 up_ft1, t=50,Stable Diffusion 1.5,up_ft:1,50,30,0.86863,86.863,0.55064,0.97609,0.08035,sd15_upft1_t50_1668729.err
+SD-1.5 up_ft1, t=75,Stable Diffusion 1.5,up_ft:1,75,30,0.8689,86.890,0.53779,0.97745,0.07777,sd15_upft1_t75_1668730.err
+SD-1.5 up_ft1, t=100,Stable Diffusion 1.5,up_ft:1,100,30,0.86999,86.999,0.5122,0.97609,0.08239,sd15_upft1_t100_from_t75_1693487.err

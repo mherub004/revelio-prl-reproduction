@@ -1,0 +1,63 @@
+### Starting TaskPrologue of job 1696129 on tg071 at Fri Jun 12 10:39:56 PM CEST 2026
+Running on cores 0-1,8-9,17-18,24-25 with governor ondemand
+Fri Jun 12 22:39:56 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.159.04             Driver Version: 580.159.04     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  Tesla V100-PCIE-32GB           On  |   00000000:18:00.0 Off |                    0 |
+| N/A   33C    P0             38W /  250W |       0MiB /  32768MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+==================================================
+Revelio Diff-C experiment
+Model: Stable Diffusion 1.5
+Dataset: Oxford-IIIT Pet
+Layer: bottleneck:0
+Diffusion timestep: 25
+Epochs: 30
+Batch size: 4
+Job ID: 1696129
+Host: tg071
+Start time: Fri Jun 12 10:39:56 PM CEST 2026
+==================================================
+PYTORCH_CUDA_ALLOC_CONF=
+==================================================
+Training completed
+End time: Sat Jun 13 07:52:05 AM CEST 2026
+==================================================
+=== JOB_STATISTICS ===
+=== current date     : Sat Jun 13 07:52:05 AM CEST 2026
+= Job-ID             : 1696129 on tinygpu
+= Job-Name           : v100_sd15_bottleneck0_t25
+= Job-Command        : /home/hpc/rlvl/rlvl173v/revelio/job_v100_sd15_bottleneck0_t25_e30.sh
+= Initial workdir    : /home/hpc/rlvl/rlvl173v/revelio
+= Queue/Partition    : v100
+= Slurm account      : rlvl with QOS=normal
+= Requested resources:  for 1-00:00:00
+= Elapsed runtime    : 09:12:11
+= Total RAM usage    : 5.1 GiB of requested  GiB (%)   
+= Node list          : tg071
+= Subm/Elig/Start/End: 2026-06-12T20:44:36 / 2026-06-12T20:44:36 / 2026-06-12T22:39:54 / 2026-06-13T07:52:05
+======================
+=== Quota infos ======
+    Path                 Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/woody            11.1G  1000.0G  1500.0G        N/A      61K   5,000K   7,500K        N/A    
+    /home/hpc              61.4G   104.9G   209.7G        N/A      88K     500K   1,000K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+Tesla V100-PCIE-32GB, 00000000:18:00.0, 842449, 90 %, 45 %, 14158 MiB, 33115438 ms
